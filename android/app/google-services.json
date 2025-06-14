@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "705816704674",
+    "project_id": "ballbreak-459e7",
+    "storage_bucket": "ballbreak-459e7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705816704674:android:a1d2d7929c2a314dc0c9fb",
+        "android_client_info": {
+          "package_name": "com.balldropapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxmIuX_5frcnOJ6PitwrLnemlWYW6-Hmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

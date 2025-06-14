@@ -32,10 +32,13 @@ export function useCrystalBallSolver(floors: number[], breakFloor: number) {
       setBall1Index(i);
       prev = i;
       i += step;
+            console.log('prev', prev)
+console.log('step', i)
       setTimeout(dropFirstBall, 1000);
     }
 
     function dropSecondBall(from: number, to: number) {
+     
       let j = from;
       function step2() {
         if (j > to || j >= floors.length) {
@@ -52,7 +55,7 @@ export function useCrystalBallSolver(floors: number[], breakFloor: number) {
           setIsSearching(false);
           return;
         }
-
+        
         j++;
         setTimeout(step2, 1000);
       }
