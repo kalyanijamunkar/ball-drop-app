@@ -20,7 +20,7 @@ steps:
 
   - script: |
       mkdir -p android/app/src/main/assets
-      mkdir =p android/app/src/main/res
+      mkdir -p android/app/src/main/res
       displayName: "Create assets & res folders"
 
   - script: |
