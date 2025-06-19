@@ -21,7 +21,7 @@ steps:
   - script: |
       mkdir -p android/app/src/main/assets
       mkdir -p android/app/src/main/res
-      displayName: "Create assets & res folders"
+    displayName: "Create assets & res folders"
 
   - script: |
       npx react-native bundle \
