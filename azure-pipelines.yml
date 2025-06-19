@@ -13,13 +13,29 @@ steps:
     displayName: 'Install Node.js'
 
   - script: |
+      export PATH="$PATH:$(npm bin -g)"
+      node --version
       npm install
     displayName: 'Install Dependencies'
 
   - script: |
+      mkdir -p android/app/src/main/assets
+      mkdir =p android/app/src/main/res
+      displayName: "Create assets & res folders"
+
+  - script: |
+      npx react-native bundle \
+        --platform android \
+        --dev false \
+        --entry-file index.js \
+        --bundle-output android/app/src/main/assets/index.android.bundle \
+        --assets-dest android/app/src/main/res
+    displayName: 'Bundle JS for Android Release'
+
+  - script: |
       cd android
       ./gradlew clean
-      ./gradlew assembleRelease --no-build-cache --rerun-tasks
+      ./gradlew assembleRelease --no-daemon --stacktrace --info
     displayName: 'Build Android Release APK'
 
   - script: |
