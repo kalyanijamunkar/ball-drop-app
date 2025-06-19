@@ -19,7 +19,7 @@ steps:
   - script: |
       cd android
       ./gradlew clean
-      ./gradlew assembleRelease
+      ./gradlew assembleRelease --no-build-cache --rerun-tasks
     displayName: 'Build Android Release APK'
 
   - script: |
