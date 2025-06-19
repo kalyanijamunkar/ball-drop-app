@@ -46,5 +46,5 @@ steps:
       firebase appdistribution:distribute android/app/build/outputs/apk/release/app-release.apk \
         --app '1:705816704674:android:a1d2d7929c2a314dc0c9fb' \
         --token '1//0gFglyxqgTvlQCgYIARAAGBASNwF-L9IrhGOo_alcS3tEQIOXJc1NcdMvIw2RmQ2V0fzukJOk9bjkG9CY8hi2tCaG_5Qnqlgk5Ao' \
-        --groups testers
+        --groups kalyanijamunkar@gmail.com
     displayName: 'Upload APK to Firebase App Distribution'
